@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang = pt-br>
+    <head>
+        <title>Calculadora Botão</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>
+      
+
+        <div id="div">
+        	<div id="f0"></div>
+        	
+        	<div id="f1">
+				<input type="button" value="C" class="btclr" onclick="limpar()">
+				<input type="button" value="^" class="btnoper" onclick="pegarValor('**')">
+				<input type="button" value="√" class="btnoper" onclick="raiz()"><br>
+
+				<input type="button" value="7" class="btnum" onclick="pegarValor(7)">
+				<input type="button" value="8" class="btnum" onclick="pegarValor(8)">
+				<input type="button" value="9" class="btnum" onclick="pegarValor(9)"><br>
+
+				<input type="button" value="4" class="btnum" onclick="pegarValor(4)">
+				<input type="button" value="5" class="btnum" onclick="pegarValor(5)">
+				<input type="button" value="6" class="btnum" onclick="pegarValor(6)"><br>
+
+				<input type="button" value="1" class="btnum" onclick="pegarValor(1)">
+				<input type="button" value="2" class="btnum" onclick="pegarValor(2)">
+				<input type="button" value="3" class="btnum" onclick="pegarValor(3)"><br>
+
+				<input type="button" value="0" class="btnum" onclick="pegarValor(0)">
+				<input type="button" value="." class="btnum" onclick="pegarValor('.')">
+				<input type="button" value="=" class="btnoper" onclick="calcular()">
+			</div>
+
+			<div id="f2">
+				<input type="button" value="÷" class="btnoper" onclick="pegarValor('/')"><br>
+				<input type="button" value="x" class="btnoper" onclick="pegarValor('*')"><br>			
+				<input type="button" value="-" class="btnoper" onclick="pegarValor('-')"><br>
+				<input type="button" value="+" class="btmais" onclick="pegarValor('+')"><br>
+			</div>
+			
+		</div>
+        <script src="script.js"></script>
+    </body>
+</html>
